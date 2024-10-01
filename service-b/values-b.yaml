@@ -1,0 +1,10 @@
+replicaCount: 1
+
+image:
+  repository: myrepo/service-b
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
